@@ -38,16 +38,26 @@ And here goes, the perfect HTML5, for you all nerdies:
     }
     main {
       margin: 0 auto;
-      width: 600px;
+      width: 100%;
       text-align: center;
+      padding: 0.2em;
+    }
+    main > * {
+      margin: 1em 0;
+    }
+    @media only screen and (min-width: 600px) {
+      main {
+        width: 600px;
+      }
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>404: You have reached the End of Web.</h1>
-    <h2>Web crawling failed.</h2>
+    <h1>HTTP 200 OK</h1>
+    <h3><i>This server never fails.</i> The world just got sucked through a wormhole.</h3>
     <p>Sorry, You just ended up on the last node of World Wide Web.</p>
+    <p>P.S. I might make this website easier to understand for you.. or NO.</p>
   </main>
 </body>
 <!-- Congrats, you just rendered the whole website in your mind! This comment you can skip before closing the "HYPERTEXT MARKUP LANGUAGE" -->
